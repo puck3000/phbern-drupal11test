@@ -1,0 +1,1091 @@
+{
+  "timestamp": "2025-06-17T07:07:57.864Z",
+  "stats": {
+    "total": 108,
+    "passed": 106,
+    "failed": 2,
+    "passRate": 98.14814814814815
+  },
+  "results": [
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_.png",
+      "width": 1280,
+      "height": 3517,
+      "diffPixels": 1744,
+      "diffPercentage": 0.038740403753198746,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "width": 1280,
+      "height": 3349,
+      "diffPixels": 35904,
+      "diffPercentage": 0.8375634517766498,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_kuenstliche_intelligenz.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_kuenstliche_intelligenz.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_kuenstliche_intelligenz.png",
+      "width": 1280,
+      "height": 3093,
+      "diffPixels": 25037,
+      "diffPercentage": 0.6324007840284513,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_labspace_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_labspace_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_labspace_phbern.png",
+      "width": 1280,
+      "height": 1627,
+      "diffPixels": 5827,
+      "diffPercentage": 0.2797998617086662,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_studium.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_studium.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_studium.png",
+      "width": 1280,
+      "height": 3661,
+      "diffPixels": 192161,
+      "diffPercentage": 4.100676898388418,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_studium_rund_ums_studieren.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_studium_rund_ums_studieren.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_studium_rund_ums_studieren.png",
+      "width": 1280,
+      "height": 2852,
+      "diffPixels": 289843,
+      "diffPercentage": 7.9396859659887795,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_studium_sekundarstufe_ii.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_studium_sekundarstufe_ii.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_studium_sekundarstufe_ii.png",
+      "width": 1280,
+      "height": 3347,
+      "diffPixels": 14904,
+      "diffPercentage": 0.3478861667164625,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_suche_keys_kurs.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_suche_keys_kurs.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_suche_keys_kurs.png",
+      "width": 1280,
+      "height": 3652,
+      "diffPixels": 5549,
+      "diffPercentage": 0.1187063595290252,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "width": 1280,
+      "height": 4206,
+      "diffPixels": 22343,
+      "diffPercentage": 0.41501352234902517,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "width": 1280,
+      "height": 3294,
+      "diffPixels": 53155,
+      "diffPercentage": 1.2606965315725562,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "width": 1280,
+      "height": 4714,
+      "diffPixels": 74051,
+      "diffPercentage": 1.2272453065337294,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_desktop_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "width": 1280,
+      "height": 5017,
+      "diffPixels": 643,
+      "diffPercentage": 0.010012831373330677,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_.png",
+      "width": 375,
+      "height": 5010,
+      "diffPixels": 52739,
+      "diffPercentage": 2.807132401862941,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "width": 375,
+      "height": 3536,
+      "diffPixels": 17510,
+      "diffPercentage": 1.3205128205128205,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_kuenstliche_intelligenz.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_kuenstliche_intelligenz.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_kuenstliche_intelligenz.png",
+      "width": 375,
+      "height": 3489,
+      "diffPixels": 7684,
+      "diffPercentage": 0.5872933982994173,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_labspace_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_labspace_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_labspace_phbern.png",
+      "width": 375,
+      "height": 1742,
+      "diffPixels": 4927,
+      "diffPercentage": 0.7542288557213931,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_studium.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_studium.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_studium.png",
+      "width": 375,
+      "height": 6026,
+      "diffPixels": 633135,
+      "diffPercentage": 28.017922336541652,
+      "hasDiff": true
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_studium_rund_ums_studieren.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_studium_rund_ums_studieren.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_studium_rund_ums_studieren.png",
+      "width": 375,
+      "height": 3244,
+      "diffPixels": 47316,
+      "diffPercentage": 3.8895191122071515,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_studium_sekundarstufe_ii.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_studium_sekundarstufe_ii.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_studium_sekundarstufe_ii.png",
+      "width": 375,
+      "height": 4024,
+      "diffPixels": 8649,
+      "diffPercentage": 0.5731610337972166,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_suche_keys_kurs.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_suche_keys_kurs.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_suche_keys_kurs.png",
+      "width": 375,
+      "height": 4374,
+      "diffPixels": 12517,
+      "diffPercentage": 0.7631153787532388,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "width": 375,
+      "height": 4190,
+      "diffPixels": 7387,
+      "diffPercentage": 0.4701352426412092,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "width": 375,
+      "height": 4092,
+      "diffPixels": 6572,
+      "diffPercentage": 0.4282828282828283,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "width": 375,
+      "height": 6181,
+      "diffPixels": 17205,
+      "diffPercentage": 0.7422747128296392,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_mobile_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "width": 375,
+      "height": 5185,
+      "diffPixels": 46142,
+      "diffPercentage": 2.3731018964963035,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_.png",
+      "width": 768,
+      "height": 7493,
+      "diffPixels": 0,
+      "diffPercentage": 0,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "width": 768,
+      "height": 3233,
+      "diffPixels": 29469,
+      "diffPercentage": 1.1868572146613052,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_kuenstliche_intelligenz.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_kuenstliche_intelligenz.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_kuenstliche_intelligenz.png",
+      "width": 768,
+      "height": 3311,
+      "diffPixels": 33901,
+      "diffPercentage": 1.3331901867512332,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_labspace_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_labspace_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_labspace_phbern.png",
+      "width": 768,
+      "height": 1795,
+      "diffPixels": 2141,
+      "diffPercentage": 0.15530698700092851,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_studium.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_studium.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_studium.png",
+      "width": 768,
+      "height": 8433,
+      "diffPixels": 385512,
+      "diffPercentage": 5.952433890667615,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_studium_rund_ums_studieren.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_studium_rund_ums_studieren.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_studium_rund_ums_studieren.png",
+      "width": 768,
+      "height": 3008,
+      "diffPixels": 125720,
+      "diffPercentage": 5.442084995567376,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_studium_sekundarstufe_ii.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_studium_sekundarstufe_ii.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_studium_sekundarstufe_ii.png",
+      "width": 768,
+      "height": 3346,
+      "diffPixels": 11304,
+      "diffPercentage": 0.4398909145248057,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_suche_keys_kurs.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_suche_keys_kurs.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_suche_keys_kurs.png",
+      "width": 768,
+      "height": 3659,
+      "diffPixels": 8651,
+      "diffPercentage": 0.3078524984057575,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "width": 768,
+      "height": 4020,
+      "diffPixels": 64430,
+      "diffPercentage": 2.0868962479270317,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "width": 768,
+      "height": 4082,
+      "diffPixels": 24869,
+      "diffPercentage": 0.793275610403397,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "width": 768,
+      "height": 5348,
+      "diffPixels": 29682,
+      "diffPercentage": 0.7226708582647718,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_chromium_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "localImagePath": "screenshots/phbern/local/local_chromium_tablet_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "diffPath": "reports/phbern/diffs/diff_chromium_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "width": 768,
+      "height": 4881,
+      "diffPixels": 8,
+      "diffPercentage": 0.00021341255207266271,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_.png",
+      "width": 1280,
+      "height": 3543,
+      "diffPixels": 147910,
+      "diffPercentage": 3.261492732147897,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "width": 1280,
+      "height": 3378,
+      "diffPixels": 25134,
+      "diffPercentage": 0.5812888543516874,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_kuenstliche_intelligenz.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_kuenstliche_intelligenz.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_kuenstliche_intelligenz.png",
+      "width": 1280,
+      "height": 3093,
+      "diffPixels": 45718,
+      "diffPercentage": 1.154774894924022,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_labspace_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_labspace_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_labspace_phbern.png",
+      "width": 1280,
+      "height": 1629,
+      "diffPixels": 6023,
+      "diffPercentage": 0.28885627685696746,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_studium.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_studium.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_studium.png",
+      "width": 1280,
+      "height": 3662,
+      "diffPixels": 52308,
+      "diffPercentage": 1.115937329328236,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_studium_rund_ums_studieren.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_studium_rund_ums_studieren.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_studium_rund_ums_studieren.png",
+      "width": 1280,
+      "height": 2852,
+      "diffPixels": 325364,
+      "diffPercentage": 8.912714761570829,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_studium_sekundarstufe_ii.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_studium_sekundarstufe_ii.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_studium_sekundarstufe_ii.png",
+      "width": 1280,
+      "height": 3358,
+      "diffPixels": 7536,
+      "diffPercentage": 0.17532757593805837,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_suche_keys_kurs.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_suche_keys_kurs.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_suche_keys_kurs.png",
+      "width": 1280,
+      "height": 3656,
+      "diffPixels": 4132,
+      "diffPercentage": 0.08829663566739607,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "width": 1280,
+      "height": 4206,
+      "diffPixels": 31798,
+      "diffPercentage": 0.5906368877793629,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "width": 1280,
+      "height": 3319,
+      "diffPixels": 46964,
+      "diffPercentage": 1.1054722808074722,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "width": 1280,
+      "height": 4738,
+      "diffPixels": 71813,
+      "diffPercentage": 1.1841263455044322,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_desktop_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "width": 1280,
+      "height": 4982,
+      "diffPixels": 618,
+      "diffPercentage": 0.009691138097149738,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_.png",
+      "width": 375,
+      "height": 5053,
+      "diffPixels": 32225,
+      "diffPercentage": 1.7006398838973547,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "width": 375,
+      "height": 3603,
+      "diffPixels": 11392,
+      "diffPercentage": 0.8431492274956055,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_kuenstliche_intelligenz.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_kuenstliche_intelligenz.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_kuenstliche_intelligenz.png",
+      "width": 375,
+      "height": 3489,
+      "diffPixels": 8033,
+      "diffPercentage": 0.613967708034776,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_labspace_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_labspace_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_labspace_phbern.png",
+      "width": 375,
+      "height": 1745,
+      "diffPixels": 9468,
+      "diffPercentage": 1.4468767908309457,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_studium.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_studium.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_studium.png",
+      "width": 375,
+      "height": 6026,
+      "diffPixels": 0,
+      "diffPercentage": 0,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_studium_rund_ums_studieren.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_studium_rund_ums_studieren.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_studium_rund_ums_studieren.png",
+      "width": 375,
+      "height": 3245,
+      "diffPixels": 53423,
+      "diffPercentage": 4.390179763739085,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_studium_sekundarstufe_ii.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_studium_sekundarstufe_ii.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_studium_sekundarstufe_ii.png",
+      "width": 375,
+      "height": 4035,
+      "diffPixels": 30983,
+      "diffPercentage": 2.0476166873192896,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_suche_keys_kurs.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_suche_keys_kurs.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_suche_keys_kurs.png",
+      "width": 375,
+      "height": 4378,
+      "diffPixels": 11344,
+      "diffPercentage": 0.6909700015227653,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "width": 375,
+      "height": 4190,
+      "diffPixels": 10339,
+      "diffPercentage": 0.6580111376292761,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "width": 375,
+      "height": 4138,
+      "diffPixels": 10563,
+      "diffPercentage": 0.6807153214113097,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "width": 375,
+      "height": 6183,
+      "diffPixels": 40056,
+      "diffPercentage": 1.7275756105450428,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_mobile_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "width": 375,
+      "height": 5150,
+      "diffPixels": 39239,
+      "diffPercentage": 2.0317928802589,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_.png",
+      "width": 768,
+      "height": 7517,
+      "diffPixels": 31297,
+      "diffPercentage": 0.5421218848388097,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "width": 768,
+      "height": 3260,
+      "diffPixels": 5738,
+      "diffPercentage": 0.22918264314928427,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_kuenstliche_intelligenz.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_kuenstliche_intelligenz.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_kuenstliche_intelligenz.png",
+      "width": 768,
+      "height": 3311,
+      "diffPixels": 1434,
+      "diffPercentage": 0.056393461189972814,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_labspace_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_labspace_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_labspace_phbern.png",
+      "width": 768,
+      "height": 1797,
+      "diffPixels": 9650,
+      "diffPercentage": 0.699226720460026,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_studium.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_studium.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_studium.png",
+      "width": 768,
+      "height": 8444,
+      "diffPixels": 204199,
+      "diffPercentage": 3.148793398665719,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_studium_rund_ums_studieren.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_studium_rund_ums_studieren.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_studium_rund_ums_studieren.png",
+      "width": 768,
+      "height": 3008,
+      "diffPixels": 140885,
+      "diffPercentage": 6.098537580341312,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_studium_sekundarstufe_ii.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_studium_sekundarstufe_ii.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_studium_sekundarstufe_ii.png",
+      "width": 768,
+      "height": 3357,
+      "diffPixels": 8553,
+      "diffPercentage": 0.3317461647304141,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_suche_keys_kurs.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_suche_keys_kurs.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_suche_keys_kurs.png",
+      "width": 768,
+      "height": 3664,
+      "diffPixels": 3601,
+      "diffPercentage": 0.12796948917394468,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "width": 768,
+      "height": 4111,
+      "diffPixels": 51929,
+      "diffPercentage": 1.6447551791940325,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "width": 768,
+      "height": 4083,
+      "diffPixels": 216,
+      "diffPercentage": 0.006888317413666422,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "width": 768,
+      "height": 5432,
+      "diffPixels": 16637,
+      "diffPercentage": 0.39879897674275894,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_firefox_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "localImagePath": "screenshots/phbern/local/local_firefox_tablet_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "diffPath": "reports/phbern/diffs/diff_firefox_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "width": 768,
+      "height": 4846,
+      "diffPixels": 41531,
+      "diffPercentage": 1.11590637467327,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_.png",
+      "width": 1280,
+      "height": 3525,
+      "diffPixels": 1543161,
+      "diffPercentage": 34.201263297872345,
+      "hasDiff": true
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "width": 1280,
+      "height": 3333,
+      "diffPixels": 11964,
+      "diffPercentage": 0.28043429342934295,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_kuenstliche_intelligenz.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_kuenstliche_intelligenz.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_kuenstliche_intelligenz.png",
+      "width": 1280,
+      "height": 3076,
+      "diffPixels": 20549,
+      "diffPercentage": 0.5219085256827048,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_labspace_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_labspace_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_labspace_phbern.png",
+      "width": 1280,
+      "height": 1613,
+      "diffPixels": 15465,
+      "diffPercentage": 0.7490409950402976,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_studium.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_studium.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_studium.png",
+      "width": 1280,
+      "height": 3649,
+      "diffPixels": 82088,
+      "diffPercentage": 1.7575020553576324,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_studium_rund_ums_studieren.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_studium_rund_ums_studieren.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_studium_rund_ums_studieren.png",
+      "width": 1280,
+      "height": 2844,
+      "diffPixels": 250011,
+      "diffPercentage": 6.867830300632911,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_studium_sekundarstufe_ii.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_studium_sekundarstufe_ii.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_studium_sekundarstufe_ii.png",
+      "width": 1280,
+      "height": 3330,
+      "diffPixels": 5821,
+      "diffPercentage": 0.13656625375375375,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_suche_keys_kurs.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_suche_keys_kurs.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_suche_keys_kurs.png",
+      "width": 1280,
+      "height": 3629,
+      "diffPixels": 33123,
+      "diffPercentage": 0.7130709217415266,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "width": 1280,
+      "height": 4184,
+      "diffPixels": 32147,
+      "diffPercentage": 0.6002591718451242,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "width": 1280,
+      "height": 3303,
+      "diffPixels": 6457,
+      "diffPercentage": 0.15272574174992432,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "width": 1280,
+      "height": 4708,
+      "diffPixels": 91077,
+      "diffPercentage": 1.5113404046304162,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_desktop_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "width": 1280,
+      "height": 4959,
+      "diffPixels": 624,
+      "diffPercentage": 0.00983061101028433,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_.png",
+      "width": 375,
+      "height": 5014,
+      "diffPixels": 11596,
+      "diffPercentage": 0.6167264991357532,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "width": 375,
+      "height": 3561,
+      "diffPixels": 18001,
+      "diffPercentage": 1.348010858373116,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_kuenstliche_intelligenz.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_kuenstliche_intelligenz.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_kuenstliche_intelligenz.png",
+      "width": 375,
+      "height": 3462,
+      "diffPixels": 2739,
+      "diffPercentage": 0.21097631426920854,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_labspace_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_labspace_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_labspace_phbern.png",
+      "width": 375,
+      "height": 1722,
+      "diffPixels": 8264,
+      "diffPercentage": 1.2797522260936895,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_studium.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_studium.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_studium.png",
+      "width": 375,
+      "height": 5978,
+      "diffPixels": 0,
+      "diffPercentage": 0,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_studium_rund_ums_studieren.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_studium_rund_ums_studieren.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_studium_rund_ums_studieren.png",
+      "width": 375,
+      "height": 3210,
+      "diffPixels": 38258,
+      "diffPercentage": 3.178234683281412,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_studium_sekundarstufe_ii.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_studium_sekundarstufe_ii.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_studium_sekundarstufe_ii.png",
+      "width": 375,
+      "height": 3990,
+      "diffPixels": 7759,
+      "diffPercentage": 0.518563074352548,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_suche_keys_kurs.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_suche_keys_kurs.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_suche_keys_kurs.png",
+      "width": 375,
+      "height": 4311,
+      "diffPixels": 14463,
+      "diffPercentage": 0.8946416144745999,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "width": 375,
+      "height": 4147,
+      "diffPixels": 16702,
+      "diffPercentage": 1.0739972671007152,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "width": 375,
+      "height": 4090,
+      "diffPixels": 2840,
+      "diffPercentage": 0.1851670741646292,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "width": 375,
+      "height": 6117,
+      "diffPixels": 35160,
+      "diffPercentage": 1.532777505313062,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_mobile_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "width": 375,
+      "height": 5103,
+      "diffPixels": 3758,
+      "diffPercentage": 0.19638121366516428,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_.png",
+      "width": 768,
+      "height": 7496,
+      "diffPixels": 513766,
+      "diffPercentage": 8.924308242173604,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png",
+      "width": 768,
+      "height": 3231,
+      "diffPixels": 25836,
+      "diffPercentage": 1.0411830702568865,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_kuenstliche_intelligenz.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_kuenstliche_intelligenz.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_kuenstliche_intelligenz.png",
+      "width": 768,
+      "height": 3293,
+      "diffPixels": 3586,
+      "diffPercentage": 0.14179383034720114,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_labspace_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_labspace_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_labspace_phbern.png",
+      "width": 768,
+      "height": 1789,
+      "diffPixels": 4826,
+      "diffPercentage": 0.35124953419042293,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_studium.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_studium.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_studium.png",
+      "width": 768,
+      "height": 8418,
+      "diffPixels": 318058,
+      "diffPercentage": 4.919672378633088,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_studium_rund_ums_studieren.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_studium_rund_ums_studieren.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_studium_rund_ums_studieren.png",
+      "width": 768,
+      "height": 2996,
+      "diffPixels": 96355,
+      "diffPercentage": 4.1876581970404985,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_studium_sekundarstufe_ii.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_studium_sekundarstufe_ii.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_studium_sekundarstufe_ii.png",
+      "width": 768,
+      "height": 3330,
+      "diffPixels": 7289,
+      "diffPercentage": 0.28501157407407407,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_suche_keys_kurs.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_suche_keys_kurs.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_suche_keys_kurs.png",
+      "width": 768,
+      "height": 3640,
+      "diffPixels": 21855,
+      "diffPercentage": 0.7817865728021978,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png",
+      "width": 768,
+      "height": 4095,
+      "diffPixels": 21498,
+      "diffPercentage": 0.6835699023199023,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png",
+      "width": 768,
+      "height": 4061,
+      "diffPixels": 17501,
+      "diffPercentage": 0.5611366761060493,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png",
+      "width": 768,
+      "height": 5400,
+      "diffPixels": 25454,
+      "diffPercentage": 0.6137635030864197,
+      "hasDiff": false
+    },
+    {
+      "prodImagePath": "screenshots/phbern/prod/prod_webkit_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "localImagePath": "screenshots/phbern/local/local_webkit_tablet_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "diffPath": "reports/phbern/diffs/diff_webkit_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png",
+      "width": 768,
+      "height": 4828,
+      "diffPixels": 4392,
+      "diffPercentage": 0.11844966859983429,
+      "hasDiff": false
+    }
+  ]
+}

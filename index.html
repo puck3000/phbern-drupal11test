@@ -1,0 +1,3958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Regression Test Report</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+    .summary {
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    .summary-stats {
+      display: flex;
+      gap: 20px;
+    }
+    .stat-item {
+      flex: 1;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    .total { background-color: #e3f2fd; }
+    .passed { background-color: #e8f5e9; }
+    .failed { background-color: #ffebee; }
+    
+    .test-group {
+      margin-bottom: 30px;
+    }
+    .test-item {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .test-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: #f5f5f5;
+      border-bottom: 1px solid #ddd;
+      cursor: pointer;
+    }
+    .test-status {
+      font-weight: bold;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+    .test-passed { background-color: #c8e6c9; color: #2e7d32; }
+    .test-failed { background-color: #ffcdd2; color: #c62828; }
+    .test-content {
+      display: none;
+      padding: 15px;
+    }
+    .test-content.visible { display: block; }
+    .test-details {
+      margin-bottom: 15px;
+    }
+    .image-comparison {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .image-container {
+      flex: 1;
+      min-width: 300px;
+    }
+    .image-container img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin-right: 5px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Visual Regression Test Report</h1>
+  
+  <div class="summary">
+    <h2>Summary</h2>
+    <div class="summary-stats">
+      <div class="stat-item total">
+        <h3>Total Tests</h3>
+        <div class="stat-value">108</div>
+      </div>
+      <div class="stat-item passed">
+        <h3>Passed</h3>
+        <div class="stat-value">106</div>
+      </div>
+      <div class="stat-item failed">
+        <h3>Failed</h3>
+        <div class="stat-value">2</div>
+      </div>
+      <div class="stat-item total">
+        <h3>Pass Rate</h3>
+        <div class="stat-value">98.1%</div>
+      </div>
+    </div>
+    <div class="test-controls" style="margin-top: 20px;">
+      <button id="expand-all">Expand All</button>
+      <button id="collapse-all">Collapse All</button>
+      <button id="show-failed">Show Only Failed</button>
+      <button id="show-all">Show All</button>
+    </div>
+  </div>
+  
+  <div class="tests">
+
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(0)">
+        <div>
+          <strong>Test #1:</strong> phbern/ch/ (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-0">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/</p>
+          <p><strong>Difference:</strong> 0.04% (1744 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3517</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(1)">
+        <div>
+          <strong>Test #2:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171 (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-1">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171</p>
+          <p><strong>Difference:</strong> 0.84% (35904 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3349</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(2)">
+        <div>
+          <strong>Test #3:</strong> phbern/ch/kuenstliche/intelligenz (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-2">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/kuenstliche/intelligenz</p>
+          <p><strong>Difference:</strong> 0.63% (25037 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3093</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_kuenstliche_intelligenz.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_kuenstliche_intelligenz.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_kuenstliche_intelligenz.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(3)">
+        <div>
+          <strong>Test #4:</strong> phbern/ch/labspace/phbern (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-3">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/labspace/phbern</p>
+          <p><strong>Difference:</strong> 0.28% (5827 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x1627</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_labspace_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_labspace_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_labspace_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(4)">
+        <div>
+          <strong>Test #5:</strong> phbern/ch/studium (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-4">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/studium</p>
+          <p><strong>Difference:</strong> 4.10% (192161 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3661</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_studium.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_studium.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_studium.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(5)">
+        <div>
+          <strong>Test #6:</strong> phbern/ch/studium/rund/ums/studieren (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-5">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/studium/rund/ums/studieren</p>
+          <p><strong>Difference:</strong> 7.94% (289843 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x2852</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_studium_rund_ums_studieren.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_studium_rund_ums_studieren.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_studium_rund_ums_studieren.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(6)">
+        <div>
+          <strong>Test #7:</strong> phbern/ch/studium/sekundarstufe/ii (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-6">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/studium/sekundarstufe/ii</p>
+          <p><strong>Difference:</strong> 0.35% (14904 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3347</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_studium_sekundarstufe_ii.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_studium_sekundarstufe_ii.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_studium_sekundarstufe_ii.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(7)">
+        <div>
+          <strong>Test #8:</strong> phbern/ch/suche/keys/kurs (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-7">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/suche/keys/kurs</p>
+          <p><strong>Difference:</strong> 0.12% (5549 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3652</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_suche_keys_kurs.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_suche_keys_kurs.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_suche_keys_kurs.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(8)">
+        <div>
+          <strong>Test #9:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-8">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern</p>
+          <p><strong>Difference:</strong> 0.42% (22343 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x4206</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(9)">
+        <div>
+          <strong>Test #10:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-9">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich</p>
+          <p><strong>Difference:</strong> 1.26% (53155 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3294</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(10)">
+        <div>
+          <strong>Test #11:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-10">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten</p>
+          <p><strong>Difference:</strong> 1.23% (74051 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x4714</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(11)">
+        <div>
+          <strong>Test #12:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp (chromium, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-11">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp</p>
+          <p><strong>Difference:</strong> 0.01% (643 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x5017</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_desktop_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(12)">
+        <div>
+          <strong>Test #13:</strong> phbern/ch/ (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-12">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/</p>
+          <p><strong>Difference:</strong> 2.81% (52739 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x5010</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(13)">
+        <div>
+          <strong>Test #14:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171 (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-13">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171</p>
+          <p><strong>Difference:</strong> 1.32% (17510 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3536</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(14)">
+        <div>
+          <strong>Test #15:</strong> phbern/ch/kuenstliche/intelligenz (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-14">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/kuenstliche/intelligenz</p>
+          <p><strong>Difference:</strong> 0.59% (7684 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3489</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_kuenstliche_intelligenz.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_kuenstliche_intelligenz.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_kuenstliche_intelligenz.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(15)">
+        <div>
+          <strong>Test #16:</strong> phbern/ch/labspace/phbern (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-15">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/labspace/phbern</p>
+          <p><strong>Difference:</strong> 0.75% (4927 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x1742</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_labspace_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_labspace_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_labspace_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item failed">
+      <div class="test-header" onclick="toggleTest(16)">
+        <div>
+          <strong>Test #17:</strong> phbern/ch/studium (chromium, mobile)
+        </div>
+        <div class="test-status test-failed">
+          FAILED
+        </div>
+      </div>
+      <div class="test-content" id="test-16">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/studium</p>
+          <p><strong>Difference:</strong> 28.02% (633135 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x6026</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_studium.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_studium.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_studium.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(17)">
+        <div>
+          <strong>Test #18:</strong> phbern/ch/studium/rund/ums/studieren (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-17">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/studium/rund/ums/studieren</p>
+          <p><strong>Difference:</strong> 3.89% (47316 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3244</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_studium_rund_ums_studieren.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_studium_rund_ums_studieren.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_studium_rund_ums_studieren.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(18)">
+        <div>
+          <strong>Test #19:</strong> phbern/ch/studium/sekundarstufe/ii (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-18">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/studium/sekundarstufe/ii</p>
+          <p><strong>Difference:</strong> 0.57% (8649 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4024</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_studium_sekundarstufe_ii.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_studium_sekundarstufe_ii.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_studium_sekundarstufe_ii.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(19)">
+        <div>
+          <strong>Test #20:</strong> phbern/ch/suche/keys/kurs (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-19">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/suche/keys/kurs</p>
+          <p><strong>Difference:</strong> 0.76% (12517 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4374</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_suche_keys_kurs.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_suche_keys_kurs.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_suche_keys_kurs.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(20)">
+        <div>
+          <strong>Test #21:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-20">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern</p>
+          <p><strong>Difference:</strong> 0.47% (7387 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4190</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(21)">
+        <div>
+          <strong>Test #22:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-21">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich</p>
+          <p><strong>Difference:</strong> 0.43% (6572 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4092</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(22)">
+        <div>
+          <strong>Test #23:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-22">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten</p>
+          <p><strong>Difference:</strong> 0.74% (17205 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x6181</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(23)">
+        <div>
+          <strong>Test #24:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp (chromium, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-23">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp</p>
+          <p><strong>Difference:</strong> 2.37% (46142 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x5185</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_mobile_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(24)">
+        <div>
+          <strong>Test #25:</strong> phbern/ch/ (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-24">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/</p>
+          <p><strong>Difference:</strong> 0.00% (0 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x7493</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(25)">
+        <div>
+          <strong>Test #26:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171 (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-25">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171</p>
+          <p><strong>Difference:</strong> 1.19% (29469 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3233</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(26)">
+        <div>
+          <strong>Test #27:</strong> phbern/ch/kuenstliche/intelligenz (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-26">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/kuenstliche/intelligenz</p>
+          <p><strong>Difference:</strong> 1.33% (33901 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3311</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_kuenstliche_intelligenz.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_kuenstliche_intelligenz.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_kuenstliche_intelligenz.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(27)">
+        <div>
+          <strong>Test #28:</strong> phbern/ch/labspace/phbern (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-27">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/labspace/phbern</p>
+          <p><strong>Difference:</strong> 0.16% (2141 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x1795</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_labspace_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_labspace_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_labspace_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(28)">
+        <div>
+          <strong>Test #29:</strong> phbern/ch/studium (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-28">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/studium</p>
+          <p><strong>Difference:</strong> 5.95% (385512 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x8433</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_studium.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_studium.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_studium.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(29)">
+        <div>
+          <strong>Test #30:</strong> phbern/ch/studium/rund/ums/studieren (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-29">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/studium/rund/ums/studieren</p>
+          <p><strong>Difference:</strong> 5.44% (125720 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3008</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_studium_rund_ums_studieren.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_studium_rund_ums_studieren.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_studium_rund_ums_studieren.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(30)">
+        <div>
+          <strong>Test #31:</strong> phbern/ch/studium/sekundarstufe/ii (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-30">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/studium/sekundarstufe/ii</p>
+          <p><strong>Difference:</strong> 0.44% (11304 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3346</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_studium_sekundarstufe_ii.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_studium_sekundarstufe_ii.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_studium_sekundarstufe_ii.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(31)">
+        <div>
+          <strong>Test #32:</strong> phbern/ch/suche/keys/kurs (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-31">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/suche/keys/kurs</p>
+          <p><strong>Difference:</strong> 0.31% (8651 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3659</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_suche_keys_kurs.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_suche_keys_kurs.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_suche_keys_kurs.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(32)">
+        <div>
+          <strong>Test #33:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-32">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern</p>
+          <p><strong>Difference:</strong> 2.09% (64430 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x4020</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(33)">
+        <div>
+          <strong>Test #34:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-33">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich</p>
+          <p><strong>Difference:</strong> 0.79% (24869 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x4082</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(34)">
+        <div>
+          <strong>Test #35:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-34">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten</p>
+          <p><strong>Difference:</strong> 0.72% (29682 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x5348</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(35)">
+        <div>
+          <strong>Test #36:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp (chromium, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-35">
+        <div class="test-details">
+          <p><strong>Browser:</strong> chromium</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp</p>
+          <p><strong>Difference:</strong> 0.00% (8 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x4881</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_chromium_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_chromium_tablet_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_chromium_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(36)">
+        <div>
+          <strong>Test #37:</strong> phbern/ch/ (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-36">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/</p>
+          <p><strong>Difference:</strong> 3.26% (147910 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3543</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(37)">
+        <div>
+          <strong>Test #38:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171 (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-37">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171</p>
+          <p><strong>Difference:</strong> 0.58% (25134 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3378</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(38)">
+        <div>
+          <strong>Test #39:</strong> phbern/ch/kuenstliche/intelligenz (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-38">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/kuenstliche/intelligenz</p>
+          <p><strong>Difference:</strong> 1.15% (45718 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3093</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_kuenstliche_intelligenz.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_kuenstliche_intelligenz.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_kuenstliche_intelligenz.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(39)">
+        <div>
+          <strong>Test #40:</strong> phbern/ch/labspace/phbern (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-39">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/labspace/phbern</p>
+          <p><strong>Difference:</strong> 0.29% (6023 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x1629</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_labspace_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_labspace_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_labspace_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(40)">
+        <div>
+          <strong>Test #41:</strong> phbern/ch/studium (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-40">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/studium</p>
+          <p><strong>Difference:</strong> 1.12% (52308 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3662</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_studium.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_studium.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_studium.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(41)">
+        <div>
+          <strong>Test #42:</strong> phbern/ch/studium/rund/ums/studieren (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-41">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/studium/rund/ums/studieren</p>
+          <p><strong>Difference:</strong> 8.91% (325364 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x2852</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_studium_rund_ums_studieren.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_studium_rund_ums_studieren.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_studium_rund_ums_studieren.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(42)">
+        <div>
+          <strong>Test #43:</strong> phbern/ch/studium/sekundarstufe/ii (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-42">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/studium/sekundarstufe/ii</p>
+          <p><strong>Difference:</strong> 0.18% (7536 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3358</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_studium_sekundarstufe_ii.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_studium_sekundarstufe_ii.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_studium_sekundarstufe_ii.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(43)">
+        <div>
+          <strong>Test #44:</strong> phbern/ch/suche/keys/kurs (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-43">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/suche/keys/kurs</p>
+          <p><strong>Difference:</strong> 0.09% (4132 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3656</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_suche_keys_kurs.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_suche_keys_kurs.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_suche_keys_kurs.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(44)">
+        <div>
+          <strong>Test #45:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-44">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern</p>
+          <p><strong>Difference:</strong> 0.59% (31798 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x4206</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(45)">
+        <div>
+          <strong>Test #46:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-45">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich</p>
+          <p><strong>Difference:</strong> 1.11% (46964 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3319</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(46)">
+        <div>
+          <strong>Test #47:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-46">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten</p>
+          <p><strong>Difference:</strong> 1.18% (71813 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x4738</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(47)">
+        <div>
+          <strong>Test #48:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp (firefox, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-47">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp</p>
+          <p><strong>Difference:</strong> 0.01% (618 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x4982</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_desktop_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(48)">
+        <div>
+          <strong>Test #49:</strong> phbern/ch/ (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-48">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/</p>
+          <p><strong>Difference:</strong> 1.70% (32225 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x5053</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(49)">
+        <div>
+          <strong>Test #50:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171 (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-49">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171</p>
+          <p><strong>Difference:</strong> 0.84% (11392 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3603</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(50)">
+        <div>
+          <strong>Test #51:</strong> phbern/ch/kuenstliche/intelligenz (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-50">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/kuenstliche/intelligenz</p>
+          <p><strong>Difference:</strong> 0.61% (8033 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3489</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_kuenstliche_intelligenz.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_kuenstliche_intelligenz.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_kuenstliche_intelligenz.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(51)">
+        <div>
+          <strong>Test #52:</strong> phbern/ch/labspace/phbern (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-51">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/labspace/phbern</p>
+          <p><strong>Difference:</strong> 1.45% (9468 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x1745</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_labspace_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_labspace_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_labspace_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(52)">
+        <div>
+          <strong>Test #53:</strong> phbern/ch/studium (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-52">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/studium</p>
+          <p><strong>Difference:</strong> 0.00% (0 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x6026</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_studium.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_studium.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_studium.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(53)">
+        <div>
+          <strong>Test #54:</strong> phbern/ch/studium/rund/ums/studieren (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-53">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/studium/rund/ums/studieren</p>
+          <p><strong>Difference:</strong> 4.39% (53423 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3245</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_studium_rund_ums_studieren.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_studium_rund_ums_studieren.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_studium_rund_ums_studieren.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(54)">
+        <div>
+          <strong>Test #55:</strong> phbern/ch/studium/sekundarstufe/ii (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-54">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/studium/sekundarstufe/ii</p>
+          <p><strong>Difference:</strong> 2.05% (30983 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4035</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_studium_sekundarstufe_ii.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_studium_sekundarstufe_ii.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_studium_sekundarstufe_ii.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(55)">
+        <div>
+          <strong>Test #56:</strong> phbern/ch/suche/keys/kurs (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-55">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/suche/keys/kurs</p>
+          <p><strong>Difference:</strong> 0.69% (11344 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4378</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_suche_keys_kurs.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_suche_keys_kurs.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_suche_keys_kurs.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(56)">
+        <div>
+          <strong>Test #57:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-56">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern</p>
+          <p><strong>Difference:</strong> 0.66% (10339 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4190</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(57)">
+        <div>
+          <strong>Test #58:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-57">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich</p>
+          <p><strong>Difference:</strong> 0.68% (10563 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4138</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(58)">
+        <div>
+          <strong>Test #59:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-58">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten</p>
+          <p><strong>Difference:</strong> 1.73% (40056 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x6183</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(59)">
+        <div>
+          <strong>Test #60:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp (firefox, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-59">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp</p>
+          <p><strong>Difference:</strong> 2.03% (39239 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x5150</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_mobile_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(60)">
+        <div>
+          <strong>Test #61:</strong> phbern/ch/ (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-60">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/</p>
+          <p><strong>Difference:</strong> 0.54% (31297 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x7517</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(61)">
+        <div>
+          <strong>Test #62:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171 (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-61">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171</p>
+          <p><strong>Difference:</strong> 0.23% (5738 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3260</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(62)">
+        <div>
+          <strong>Test #63:</strong> phbern/ch/kuenstliche/intelligenz (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-62">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/kuenstliche/intelligenz</p>
+          <p><strong>Difference:</strong> 0.06% (1434 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3311</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_kuenstliche_intelligenz.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_kuenstliche_intelligenz.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_kuenstliche_intelligenz.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(63)">
+        <div>
+          <strong>Test #64:</strong> phbern/ch/labspace/phbern (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-63">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/labspace/phbern</p>
+          <p><strong>Difference:</strong> 0.70% (9650 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x1797</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_labspace_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_labspace_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_labspace_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(64)">
+        <div>
+          <strong>Test #65:</strong> phbern/ch/studium (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-64">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/studium</p>
+          <p><strong>Difference:</strong> 3.15% (204199 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x8444</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_studium.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_studium.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_studium.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(65)">
+        <div>
+          <strong>Test #66:</strong> phbern/ch/studium/rund/ums/studieren (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-65">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/studium/rund/ums/studieren</p>
+          <p><strong>Difference:</strong> 6.10% (140885 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3008</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_studium_rund_ums_studieren.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_studium_rund_ums_studieren.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_studium_rund_ums_studieren.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(66)">
+        <div>
+          <strong>Test #67:</strong> phbern/ch/studium/sekundarstufe/ii (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-66">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/studium/sekundarstufe/ii</p>
+          <p><strong>Difference:</strong> 0.33% (8553 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3357</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_studium_sekundarstufe_ii.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_studium_sekundarstufe_ii.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_studium_sekundarstufe_ii.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(67)">
+        <div>
+          <strong>Test #68:</strong> phbern/ch/suche/keys/kurs (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-67">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/suche/keys/kurs</p>
+          <p><strong>Difference:</strong> 0.13% (3601 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3664</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_suche_keys_kurs.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_suche_keys_kurs.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_suche_keys_kurs.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(68)">
+        <div>
+          <strong>Test #69:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-68">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern</p>
+          <p><strong>Difference:</strong> 1.64% (51929 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x4111</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(69)">
+        <div>
+          <strong>Test #70:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-69">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich</p>
+          <p><strong>Difference:</strong> 0.01% (216 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x4083</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(70)">
+        <div>
+          <strong>Test #71:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-70">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten</p>
+          <p><strong>Difference:</strong> 0.40% (16637 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x5432</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(71)">
+        <div>
+          <strong>Test #72:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp (firefox, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-71">
+        <div class="test-details">
+          <p><strong>Browser:</strong> firefox</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp</p>
+          <p><strong>Difference:</strong> 1.12% (41531 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x4846</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_firefox_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_firefox_tablet_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_firefox_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item failed">
+      <div class="test-header" onclick="toggleTest(72)">
+        <div>
+          <strong>Test #73:</strong> phbern/ch/ (webkit, desktop)
+        </div>
+        <div class="test-status test-failed">
+          FAILED
+        </div>
+      </div>
+      <div class="test-content" id="test-72">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/</p>
+          <p><strong>Difference:</strong> 34.20% (1543161 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3525</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(73)">
+        <div>
+          <strong>Test #74:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171 (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-73">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171</p>
+          <p><strong>Difference:</strong> 0.28% (11964 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3333</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(74)">
+        <div>
+          <strong>Test #75:</strong> phbern/ch/kuenstliche/intelligenz (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-74">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/kuenstliche/intelligenz</p>
+          <p><strong>Difference:</strong> 0.52% (20549 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3076</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_kuenstliche_intelligenz.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_kuenstliche_intelligenz.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_kuenstliche_intelligenz.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(75)">
+        <div>
+          <strong>Test #76:</strong> phbern/ch/labspace/phbern (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-75">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/labspace/phbern</p>
+          <p><strong>Difference:</strong> 0.75% (15465 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x1613</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_labspace_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_labspace_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_labspace_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(76)">
+        <div>
+          <strong>Test #77:</strong> phbern/ch/studium (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-76">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/studium</p>
+          <p><strong>Difference:</strong> 1.76% (82088 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3649</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_studium.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_studium.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_studium.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(77)">
+        <div>
+          <strong>Test #78:</strong> phbern/ch/studium/rund/ums/studieren (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-77">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/studium/rund/ums/studieren</p>
+          <p><strong>Difference:</strong> 6.87% (250011 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x2844</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_studium_rund_ums_studieren.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_studium_rund_ums_studieren.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_studium_rund_ums_studieren.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(78)">
+        <div>
+          <strong>Test #79:</strong> phbern/ch/studium/sekundarstufe/ii (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-78">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/studium/sekundarstufe/ii</p>
+          <p><strong>Difference:</strong> 0.14% (5821 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3330</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_studium_sekundarstufe_ii.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_studium_sekundarstufe_ii.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_studium_sekundarstufe_ii.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(79)">
+        <div>
+          <strong>Test #80:</strong> phbern/ch/suche/keys/kurs (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-79">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/suche/keys/kurs</p>
+          <p><strong>Difference:</strong> 0.71% (33123 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3629</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_suche_keys_kurs.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_suche_keys_kurs.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_suche_keys_kurs.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(80)">
+        <div>
+          <strong>Test #81:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-80">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern</p>
+          <p><strong>Difference:</strong> 0.60% (32147 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x4184</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(81)">
+        <div>
+          <strong>Test #82:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-81">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich</p>
+          <p><strong>Difference:</strong> 0.15% (6457 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x3303</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(82)">
+        <div>
+          <strong>Test #83:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-82">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten</p>
+          <p><strong>Difference:</strong> 1.51% (91077 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x4708</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(83)">
+        <div>
+          <strong>Test #84:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp (webkit, desktop)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-83">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> desktop</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp</p>
+          <p><strong>Difference:</strong> 0.01% (624 pixels)</p>
+               <p><strong>Dimensions:</strong> 1280x4959</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_desktop_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_desktop_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(84)">
+        <div>
+          <strong>Test #85:</strong> phbern/ch/ (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-84">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/</p>
+          <p><strong>Difference:</strong> 0.62% (11596 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x5014</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(85)">
+        <div>
+          <strong>Test #86:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171 (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-85">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171</p>
+          <p><strong>Difference:</strong> 1.35% (18001 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3561</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(86)">
+        <div>
+          <strong>Test #87:</strong> phbern/ch/kuenstliche/intelligenz (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-86">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/kuenstliche/intelligenz</p>
+          <p><strong>Difference:</strong> 0.21% (2739 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3462</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_kuenstliche_intelligenz.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_kuenstliche_intelligenz.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_kuenstliche_intelligenz.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(87)">
+        <div>
+          <strong>Test #88:</strong> phbern/ch/labspace/phbern (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-87">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/labspace/phbern</p>
+          <p><strong>Difference:</strong> 1.28% (8264 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x1722</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_labspace_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_labspace_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_labspace_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(88)">
+        <div>
+          <strong>Test #89:</strong> phbern/ch/studium (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-88">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/studium</p>
+          <p><strong>Difference:</strong> 0.00% (0 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x5978</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_studium.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_studium.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_studium.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(89)">
+        <div>
+          <strong>Test #90:</strong> phbern/ch/studium/rund/ums/studieren (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-89">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/studium/rund/ums/studieren</p>
+          <p><strong>Difference:</strong> 3.18% (38258 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3210</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_studium_rund_ums_studieren.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_studium_rund_ums_studieren.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_studium_rund_ums_studieren.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(90)">
+        <div>
+          <strong>Test #91:</strong> phbern/ch/studium/sekundarstufe/ii (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-90">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/studium/sekundarstufe/ii</p>
+          <p><strong>Difference:</strong> 0.52% (7759 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x3990</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_studium_sekundarstufe_ii.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_studium_sekundarstufe_ii.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_studium_sekundarstufe_ii.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(91)">
+        <div>
+          <strong>Test #92:</strong> phbern/ch/suche/keys/kurs (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-91">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/suche/keys/kurs</p>
+          <p><strong>Difference:</strong> 0.89% (14463 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4311</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_suche_keys_kurs.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_suche_keys_kurs.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_suche_keys_kurs.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(92)">
+        <div>
+          <strong>Test #93:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-92">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern</p>
+          <p><strong>Difference:</strong> 1.07% (16702 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4147</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(93)">
+        <div>
+          <strong>Test #94:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-93">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich</p>
+          <p><strong>Difference:</strong> 0.19% (2840 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x4090</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(94)">
+        <div>
+          <strong>Test #95:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-94">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten</p>
+          <p><strong>Difference:</strong> 1.53% (35160 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x6117</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(95)">
+        <div>
+          <strong>Test #96:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp (webkit, mobile)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-95">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> mobile</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp</p>
+          <p><strong>Difference:</strong> 0.20% (3758 pixels)</p>
+               <p><strong>Dimensions:</strong> 375x5103</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_mobile_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_mobile_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(96)">
+        <div>
+          <strong>Test #97:</strong> phbern/ch/ (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-96">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/</p>
+          <p><strong>Difference:</strong> 8.92% (513766 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x7496</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(97)">
+        <div>
+          <strong>Test #98:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171 (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-97">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/forschung/projekte/f/5B0/5D/schwerpunktprogramm/3A2171</p>
+          <p><strong>Difference:</strong> 1.04% (25836 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3231</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_forschung_projekte_f_5B0_5D_schwerpunktprogramm_3A2171.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(98)">
+        <div>
+          <strong>Test #99:</strong> phbern/ch/kuenstliche/intelligenz (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-98">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/kuenstliche/intelligenz</p>
+          <p><strong>Difference:</strong> 0.14% (3586 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3293</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_kuenstliche_intelligenz.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_kuenstliche_intelligenz.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_kuenstliche_intelligenz.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(99)">
+        <div>
+          <strong>Test #100:</strong> phbern/ch/labspace/phbern (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-99">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/labspace/phbern</p>
+          <p><strong>Difference:</strong> 0.35% (4826 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x1789</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_labspace_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_labspace_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_labspace_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(100)">
+        <div>
+          <strong>Test #101:</strong> phbern/ch/studium (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-100">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/studium</p>
+          <p><strong>Difference:</strong> 4.92% (318058 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x8418</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_studium.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_studium.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_studium.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(101)">
+        <div>
+          <strong>Test #102:</strong> phbern/ch/studium/rund/ums/studieren (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-101">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/studium/rund/ums/studieren</p>
+          <p><strong>Difference:</strong> 4.19% (96355 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x2996</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_studium_rund_ums_studieren.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_studium_rund_ums_studieren.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_studium_rund_ums_studieren.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(102)">
+        <div>
+          <strong>Test #103:</strong> phbern/ch/studium/sekundarstufe/ii (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-102">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/studium/sekundarstufe/ii</p>
+          <p><strong>Difference:</strong> 0.29% (7289 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3330</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_studium_sekundarstufe_ii.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_studium_sekundarstufe_ii.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_studium_sekundarstufe_ii.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(103)">
+        <div>
+          <strong>Test #104:</strong> phbern/ch/suche/keys/kurs (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-103">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/suche/keys/kurs</p>
+          <p><strong>Difference:</strong> 0.78% (21855 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x3640</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_suche_keys_kurs.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_suche_keys_kurs.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_suche_keys_kurs.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(104)">
+        <div>
+          <strong>Test #105:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-104">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/news/439/abschluesse/an/der/phbern</p>
+          <p><strong>Difference:</strong> 0.68% (21498 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x4095</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_ueber_die_phbern_aktuell_news_439_abschluesse_an_der_phbern.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(105)">
+        <div>
+          <strong>Test #106:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-105">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/ueber/die/phbern/aktuell/veranstaltungen/eine/schweiz/fuer/kinder/wirklich</p>
+          <p><strong>Difference:</strong> 0.56% (17501 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x4061</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_ueber_die_phbern_aktuell_veranstaltungen_eine_schweiz_fuer_kinder_wirklich.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(106)">
+        <div>
+          <strong>Test #107:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-106">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/20771598/ikas/2025/die/zukunftsfaehige/schule/gestalten</p>
+          <p><strong>Difference:</strong> 0.61% (25454 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x5400</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_weiterbildung_20771598_ikas_2025_die_zukunftsfaehige_schule_gestalten.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="test-item passed">
+      <div class="test-header" onclick="toggleTest(107)">
+        <div>
+          <strong>Test #108:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp (webkit, tablet)
+        </div>
+        <div class="test-status test-passed">
+          PASSED
+        </div>
+      </div>
+      <div class="test-content" id="test-107">
+        <div class="test-details">
+          <p><strong>Browser:</strong> webkit</p>
+          <p><strong>Viewport:</strong> tablet</p>
+          <p><strong>URL:</strong> phbern/ch/weiterbildung/intensivweiterbildung/individuelles/studienprogramm/isp</p>
+          <p><strong>Difference:</strong> 0.12% (4392 pixels)</p>
+               <p><strong>Dimensions:</strong> 768x4828</p>
+        </div>
+        <div class="image-comparison">
+          <div class="image-container">
+            <h4>Production</h4>
+            <img src="./screenshots/prod/prod_webkit_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Production" />
+          </div>
+          <div class="image-container">
+            <h4>Local</h4>
+            <img src="./screenshots/local/local_webkit_tablet_phbern_ddev_site_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Local" />
+          </div>
+          
+          <div class="image-container">
+            <h4>Difference</h4>
+            <img src="./diffs/diff_webkit_tablet_phbern_ch_weiterbildung_intensivweiterbildung_individuelles_studienprogramm_isp.png" alt="Difference" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Toggle test details visibility
+    function toggleTest(index) {
+      const testContent = document.getElementById('test-' + index);
+      testContent.classList.toggle('visible');
+    }
+    
+    // Expand all tests
+    document.getElementById('expand-all').addEventListener('click', function() {
+      document.querySelectorAll('.test-content').forEach(el => {
+        el.classList.add('visible');
+      });
+    });
+    
+    // Collapse all tests
+    document.getElementById('collapse-all').addEventListener('click', function() {
+      document.querySelectorAll('.test-content').forEach(el => {
+        el.classList.remove('visible');
+      });
+    });
+    
+    // Show only failed tests
+    document.getElementById('show-failed').addEventListener('click', function() {
+      document.querySelectorAll('.test-item').forEach(el => {
+        if (el.classList.contains('failed')) {
+          el.style.display = 'block';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    });
+    
+    // Show all tests
+    document.getElementById('show-all').addEventListener('click', function() {
+      document.querySelectorAll('.test-item').forEach(el => {
+        el.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
